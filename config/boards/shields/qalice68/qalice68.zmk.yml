@@ -1,0 +1,9 @@
+file_format: "1"
+id: qalice68
+name: Qiang's Alice68
+type: shield
+url: na
+requires: [nrfmicro_13]
+features:
+  - keys
+  - encoder
