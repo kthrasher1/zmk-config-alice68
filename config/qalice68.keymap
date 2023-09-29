@@ -20,6 +20,8 @@
 &kp LSHFT  &kp Z     &kp X        &kp C   &kp V     &kp B   &kp B   &kp N      &kp M   &kp COMMA  &kp DOT    &kp FSLH   &kp RSHFT       &kp UP_ARROW    &kp PAGE_DOWN
 &kp LCTRL  &kp LALT  &lt 1 SPACE          &kp LGUI                  &kp SPACE          &mo 1      &kp GRAVE             &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
+
+            sensor-bindings = <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>;
         };
 
         layer_1 {
