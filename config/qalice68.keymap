@@ -9,17 +9,16 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-
     keymap {
         compatible = "zmk,keymap";
 
         layer_0 {
             bindings = <
-&bootloader    &kp N1    &kp N2       &kp N3  &kp N4    &kp N5  &kp N6  &kp N7     &kp N8  &kp N9     &kp N0     &kp MINUS  &kp EQUAL       &kp BSPC        &kp C_MUTE
-&kp TAB    &kp Q     &kp W        &kp E   &kp R     &kp T   &kp Y   &kp U      &kp I   &kp O      &kp P      &kp LBKT   &kp RBKT        &kp BSLH        &kp INS
+&kp ESC    &kp N1    &kp N2       &kp N3  &kp N4    &kp N5  &kp N6  &kp N7     &kp N8  &kp N9     &kp N0     &kp MINUS  &kp EQUAL       &kp BSPC        &kp C_MUTE
+&kp TAB    &kp Q     &kp W        &kp E   &kp R     &kp T   &kp Y   &kp U      &kp I   &kp O      &kp P      &kp LBKT   &kp RBKT        &kp BSLH        &kp DELETE
 &kp LCTRL  &kp A     &kp S        &kp D   &kp F     &kp G   &kp H   &kp J      &kp K   &kp L      &kp SEMI   &kp APOS   &kp ENTER                       &kp PAGE_UP
 &kp LSHFT  &kp Z     &kp X        &kp C   &kp V     &kp B   &kp B   &kp N      &kp M   &kp COMMA  &kp DOT    &kp FSLH   &kp RSHFT       &kp UP_ARROW    &kp PAGE_DOWN
-&kp LCTRL  &kp LALT  &lt 1 SPACE          &kp LGUI                  &kp SPACE          &mo 1      &kp GRAVE             &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&kp LCTRL  &kp LALT  &lt 1 SPACE          &kp LGUI                  &kp SPACE          &kp RALT   &kp GRAVE             &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -27,11 +26,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6       &kp F7  &kp F8   &kp F9  &kp F10  &kp F11  &kp F12   &trans         &trans
-&trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans       &trans  &kp INS  &trans  &trans   &trans   &trans    &trans         &trans
-&trans     &trans        &trans        &trans        &trans        &trans        &trans       &trans  &trans   &trans  &trans   &trans   &trans                   &trans
-&trans     &trans        &trans        &kp K_CALC    &trans        &bt BT_CLR    &bootloader  &trans  &trans   &trans  &trans   &trans   &trans    &kp PAGE_UP    &trans
-&trans     &trans        &trans                      &trans                                   &trans           &trans  &trans            &kp HOME  &kp PAGE_DOWN  &kp END
+&kp GRAVE  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6       &kp F7  &kp F8   &kp F9  &kp F10          &kp F11  &kp F12   &kp DELETE     &trans
+&trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans       &trans  &kp INS  &trans  &kp PRINTSCREEN  &trans   &trans    &trans         &trans
+&kp CAPS   &trans        &trans        &trans        &trans        &trans        &trans       &trans  &trans   &trans  &trans           &trans   &trans                   &trans
+&trans     &trans        &trans        &kp K_CALC    &kp INS       &bt BT_CLR    &bootloader  &trans  &trans   &trans  &trans           &trans   &trans    &kp PAGE_UP    &trans
+&trans     &trans        &trans                      &trans                                   &trans           &trans  &trans                    &kp HOME  &kp PAGE_DOWN  &kp END
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
