@@ -1,9 +1,9 @@
 file_format: "1"
-id: qalice68
-name: Qiang's Alice68
+id: KTalice68
+name: KT Alice68
 type: shield
 url: na
-requires: [nrfmicro_13]
+requires: [sparkfun_pro_micro_rp2040]
 features:
   - keys
   - encoder
