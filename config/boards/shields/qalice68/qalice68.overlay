@@ -35,7 +35,7 @@
             gpios = <&gpio0 10 GPIO_ACTIVE_HIGH>;
         };
         led_3 {
-            gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;
+            gpios = <&gpio1 6 GPIO_ACTIVE_HIGH>;
         };
     };
 
